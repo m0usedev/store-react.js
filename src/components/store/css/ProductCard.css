@@ -1,0 +1,33 @@
+.ProductCard {
+  width: 250px;
+  height: 500px;
+
+  padding: var(--container-pading);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  border: 1px solid var(--container-border-color);
+  border-radius: var(--container-border-radius);
+  background-color: var(--container-background-color);
+
+  p {
+    font-size: var(--p-small-font-size);
+    line-height: var(--p-line-height);
+    color: var(--text-alternative-color);
+    span {
+      color: var(--text-primary-color);
+    }
+  }
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: var(--p-font-size);
+    line-height: var(--p-line-height);
+  }
+}
