@@ -1,0 +1,28 @@
+.ActionButton {
+  padding: 8px 16px;
+  border: 1px solid var( --container-border-color);
+  border-radius: var(--button-max-border-radius);
+  background-color: var( --button-second-background-color);
+
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  .simbol{
+    margin-right: 8px;
+    display: block;
+    width: 16px;
+    fill: white;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .text {
+    font-family: Urbanist,sans-serif;
+    display: block;
+    color: var(--text-alternative-color);
+  }
+
+}

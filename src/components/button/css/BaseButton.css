@@ -1,0 +1,15 @@
+.BaseButton {
+  /*
+    width: 128px;
+    height: 32px
+  */
+  width: auto;
+  height: 32px;
+
+  padding: 0 var(--container-pading);
+  border: none;
+  border-radius: var(--button-standar-border-radius);
+  background-color: var(--button-background-color);
+
+  color: var(--button-color);
+}
