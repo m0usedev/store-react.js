@@ -1,6 +1,5 @@
 
-import ProductCard from './components/store/ProductCard'
-import ProductView from './components/store/ProductView'
+import Store from './components/store/Store'
 
 import './App.css'
 
@@ -8,8 +7,7 @@ function App() {
 
   return (
     <div className='App'>
-      <ProductView />
-      <ProductCard />
+      <Store />
     </div>
   )
 }
