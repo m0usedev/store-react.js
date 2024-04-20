@@ -35,8 +35,8 @@
   --h3-font-size: 1.25rem;
   --h3-line-height: 1.75rem;
 
-  --h8-font-size: 1.125rem;
-  --h8-line-height: 1.75rem;
+  --h6-font-size: 1.125rem;
+  --h6-line-height: 1.75rem;
 
   --p-small-font-size: .75rem;
   --p-medium-font-size: 20px;
@@ -58,10 +58,10 @@
     line-height: var(--h3-line-height);
   }
 
-  h8 {
+  h6 {
     font-weight: var(--font-weight-4);
-    font-size: var(--h8-font-size);
-    line-height: var(--h8-line-height);
+    font-size: var(--h6-font-size);
+    line-height: var(--h6-line-height);
   }
 }
 
