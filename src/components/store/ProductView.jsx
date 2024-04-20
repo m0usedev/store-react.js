@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState} from 'react'
 
 import GOOD_RESULT from '../../JSON/good-result.json'
 
@@ -12,7 +12,9 @@ import './css/ProductView.css'
 
 export default function ProductView () {
   const [imgMain, setImgMain] = useState(GOOD_RESULT.images[0])
-  const [dataSelect, setSataSelect] = useState(new Array(GOOD_RESULT.images.length).fill(false))
+  const [dataSelect, setSataSelect] = useState([true].concat(new Array(GOOD_RESULT.images.length-1).fill(false)))
+
+
 
   const changeImgMain = (e) => {
     let copyData = [...dataSelect]
