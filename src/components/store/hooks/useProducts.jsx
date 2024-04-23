@@ -9,6 +9,7 @@ import { useEffect, useState, createContext } from "react"
 /*useProducts*/
 export function useProducts() {
   const [products, setProducts] = useState(null)
+  const [specificProduct, setSpecificProduct] = useState(null)
 
   useEffect ( () => {
 
@@ -17,21 +18,23 @@ export function useProducts() {
 
   },[])
 
-  return { products, setProducts }
+  return { products, setProducts, specificProduct, setSpecificProduct }
 }
 
 /*ProductsProvider*/
 /*ProductsProvider*/
 /*ProductsProvider*/
-const ProductsContext = createContext(null)
+export const ProductsContext = createContext(null)
 
 export function ProductsProvider ({ children }) {
-  const { products, setProducts } = useProducts()
+  const { products, setProducts, specificProduct, setSpecificProduct } = useProducts()
 
   return (
     <ProductsContext.Provider value={{ 
-      products, 
-      setProducts 
+      products,
+      setProducts,
+      specificProduct,
+      setSpecificProduct
     }}>
       { children }
     </ProductsContext.Provider>
@@ -39,5 +42,5 @@ export function ProductsProvider ({ children }) {
 }
 
 ProductsProvider.propTypes = {
-  children: PropTypes.func,
+  children: PropTypes.object,
 };
