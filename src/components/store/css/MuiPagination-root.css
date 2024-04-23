@@ -1,0 +1,15 @@
+.Pagination {
+  .MuiPagination-root{
+    width: 100%;
+    margin: 16px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    button {
+      color: var(--text-primary-color);
+    }
+    li div {
+      color: var(--text-primary-color);
+    }
+  }
+}
