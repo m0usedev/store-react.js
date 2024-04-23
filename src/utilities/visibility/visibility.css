@@ -1,0 +1,8 @@
+.VisibilityProvider {
+  *[data-visibility=true] {
+    display: block;
+  }
+  *[data-visibility=false] {
+    display: none;
+  }
+}
