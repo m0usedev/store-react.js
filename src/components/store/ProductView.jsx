@@ -1,6 +1,6 @@
-import { useState} from 'react'
+import PropTypes from 'prop-types';
 
-import GOOD_RESULT from '../../JSON/good-result.json'
+import { useEffect, useState} from 'react'
 
 import BaseButton from '../button/BaseButton'
 import ActionButton from '../button/ActionButton'
@@ -10,11 +10,14 @@ import { LeftArrow } from '../svg/svg'
 import './css/Product.css'
 import './css/ProductView.css'
 
-export default function ProductView () {
-  const [imgMain, setImgMain] = useState(GOOD_RESULT.images[0])
-  const [dataSelect, setSataSelect] = useState([true].concat(new Array(GOOD_RESULT.images.length-1).fill(false)))
+export default function ProductView ({ product }) {
+  const [imgMain, setImgMain] = useState(product.images[0])
+  const [dataSelect, setSataSelect] = useState([true].concat(new Array(product.images.length-1).fill(false)))
 
-
+  useEffect( () => {
+    setImgMain(product.images[0])
+    setSataSelect([true].concat(new Array(product.images.length-1).fill(false)))
+  }, [product])
 
   const changeImgMain = (e) => {
     let copyData = [...dataSelect]
@@ -25,19 +28,19 @@ export default function ProductView () {
     setImgMain(e.target.src)
   }
 
-  const viewOptions = GOOD_RESULT.images.map( (img, index) => (
+  const viewOptions = product.images.map( (img, index) => (
     <img
       key={'img'+index}
       className='product-img view-option'
       src={img}
-      alt={GOOD_RESULT.title}
-      title={GOOD_RESULT.title}
+      alt={product.title}
+      title={product.title}
       onClick={changeImgMain}
       data-selected = {dataSelect[index]}
     />
   ) ) 
   
-  return (    
+  return (
   <div className='ProductView'>
     <div className='product-views'>
       <div className='view-options'>
@@ -47,24 +50,24 @@ export default function ProductView () {
         <img
           className='product-img'
           src={imgMain}
-          alt={GOOD_RESULT.title}
-          title={GOOD_RESULT.title}
+          alt={product.title}
+          title={product.title}
         />
         <ActionButton simbol={<LeftArrow/>} text='Back' />
       </div>
     </div>
 
     <div className='product-content'>
-      <h1>{GOOD_RESULT.title}</h1>
+      <h1>{product.title}</h1>
       <div className='product-category'>
-        {GOOD_RESULT.category.name}
+        {product.category.name}
       </div>
       <div className='product-description'>
-        <p>{GOOD_RESULT.description}</p>
+        <p>{product.description}</p>
       </div>
       <footer>
         <div className='product-price'>
-          Price <span>$ {GOOD_RESULT.price}</span>
+          Price <span>$ {product.price}</span>
         </div>
         <BaseButton />
       </footer>
@@ -72,3 +75,7 @@ export default function ProductView () {
   </div>
   )
 }
+
+ProductView.propTypes = {
+  product: PropTypes.object
+};
