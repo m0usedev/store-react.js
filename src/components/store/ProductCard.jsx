@@ -1,18 +1,30 @@
 import PropTypes from 'prop-types';
 
+import { useContext } from 'react';
+
 import BaseButton from '../button/BaseButton'
+
+import { VisibilityContext } from "../../utilities/visibility/visibility"
+import { ProductsContext } from './hooks/useProducts';
 
 import './css/Product.css'
 import './css/ProductCard.css'
 
 export default function ProductCard ({ product }) {
+  const { setVisibility }      = useContext(VisibilityContext)
+  const { setSpecificProduct } = useContext(ProductsContext)
+
   return (
     <div className='ProductCard'>
       <img
-        className='product-img'
-        src={product.images[0]}
-        alt={product.title}
-        title={product.title}
+        className = 'product-img'
+        src       = {product.images[0]}
+        alt       = {product.title}
+        title     = {product.title}
+        onClick   = {() => {
+          setSpecificProduct(product)
+          setVisibility(true)
+        }}
       />
       <h3>{product.title}</h3>
       <p>
@@ -29,7 +41,7 @@ export default function ProductCard ({ product }) {
         <div className='product-price'>
           Price <span>$ {product.price}</span>
         </div>
-        <BaseButton />
+        <BaseButton text='Add to cart'/>
       </footer>
     </div>
   )

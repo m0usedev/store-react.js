@@ -15,4 +15,26 @@
   .ProductCard {
     margin: 0 auto;
   }
+
+  .container-ProductView {
+    .blur-background{
+      content: '';
+      position: fixed;
+      z-index: 49;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: var(--blur-background-color);
+      opacity: 0.5;
+    }
+
+    .ProductView {
+      position: fixed;
+      z-index: 50;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
 }
