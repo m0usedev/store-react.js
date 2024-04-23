@@ -26,3 +26,40 @@ export async function porductsApi () {
     .then( (response) => { return response.json() } )
     .then( (data) => { return  refactorArray(data) }  )
 }
+
+// export async function categoriesApi () {
+//   return fetch( CATEGORIES_URL )
+//     .then( (response) => { return response.json() } )
+//     .then( (data) => { return data.map( (element) => {
+//         return {
+//           id   : element.id,
+//           name : element.name
+//         }
+//       })  
+//     })
+// }
+
+// export async function prepareFilter () {
+//   let array = await porductsApi ()
+
+//   let precioMinimo = Infinity;
+//   let precioMaximo = -Infinity;
+
+//   array.forEach(producto => {
+//     if (producto.price < precioMinimo) {
+//       precioMinimo = producto.price;
+//     }
+//     if (producto.price > precioMaximo) {
+//       precioMaximo = producto.price;
+//     }
+//   });
+
+//   return {
+//    priceRange : {
+//      min: precioMinimo,
+//      max: precioMaximo
+//    },
+//    category : [null],
+//    currency : 'USD'
+//  }
+// }

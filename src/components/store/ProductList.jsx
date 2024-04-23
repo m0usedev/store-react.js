@@ -33,7 +33,6 @@ export default function ProductList () {
 
   useEffect ( () => {
     if(products) {
-      console.log(products)
       let newProducts = structuredClone(products).slice( 0, 10 )
       setList(tranformProduct(newProducts))
     }
