@@ -29,5 +29,5 @@ export function PaginationProvider ({ children }) {
 }
 
 PaginationProvider.propTypes = {
-  children: PropTypes.array,
+  children: PropTypes.node,
 };

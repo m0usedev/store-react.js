@@ -42,5 +42,5 @@ export function ProductsProvider ({ children }) {
 }
 
 ProductsProvider.propTypes = {
-  children: PropTypes.object,
+  children: PropTypes.node,
 };
