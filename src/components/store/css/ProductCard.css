@@ -12,6 +12,10 @@
   border-radius: var(--container-border-radius);
   background-color: var(--container-background-color);
 
+  img:hover{
+    cursor: pointer;
+  }
+
   p {
     font-size: var(--p-small-font-size);
     line-height: var(--p-line-height);
