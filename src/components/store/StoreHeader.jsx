@@ -1,6 +1,8 @@
 
 export default function StoreHeader () {
   return (
-    null
+    <div className="StoreHeader">
+      StoreHeader
+    </div>
   )
 }
