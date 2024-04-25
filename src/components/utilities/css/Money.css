@@ -1,0 +1,16 @@
+.Money {
+  display: flex;
+  justify-content: center;
+  &.lefth {
+    flex-direction: row-reverse;
+    .FormaterSimbol{
+      margin-right: 5px;
+    }
+  }
+  &.rigth {
+    flex-direction: row;
+    .FormaterSimbol{
+      margin-left: 5px;
+    }
+  }
+}
