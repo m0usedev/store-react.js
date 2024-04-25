@@ -9,15 +9,20 @@ import './css/MuiPagination-root.css'
 
 export default function StorePagination () {
   const { products } = useContext(ProductsContext)
-  const { setNumPagination } = usePagination()
+  const { numPagination, setNumPagination } = usePagination()
   const [maxPaginaton, setMaxPaginaton] = useState(null)
+
+  useEffect(() => {
+    if(numPagination){
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }
+  }, [numPagination])
 
   const onChange = (event, page) => {
     setNumPagination(page)
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    });
   }
 
   useEffect( () => {
@@ -28,7 +33,7 @@ export default function StorePagination () {
   
   return (
     <div className="Pagination">
-      <Pagination count={maxPaginaton ? maxPaginaton : 1} color="primary"  onChange={onChange}/>
+      <Pagination page={numPagination} count={maxPaginaton ? maxPaginaton : 1} color="primary"  onChange={onChange}/>
     </div>
   )
 }
