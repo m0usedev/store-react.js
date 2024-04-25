@@ -69,7 +69,14 @@ export default function ProductList () {
 
   return (
     <div className="ProductList">
-      {list}
+      {list ? 
+        list.length>0 ?
+          list
+        :
+          <h1 className="note">No se han encontrado Productos</h1>
+      : 
+        <h1 className="note">No se hay productos</h1>
+      }
       <div className="container-ProductView" data-visibility={visibility}>
         {
           specificProduct ?
