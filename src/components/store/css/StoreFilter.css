@@ -1,0 +1,25 @@
+.StoreFilter {
+  background-color: var(--container-background-color);
+  border: 1px solid var(--container-border-color);
+  border-radius: var(--container-border-radius);
+  padding: var(--container-pading);
+
+  & > .title {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .Filter {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    margin-bottom: 10px;
+
+    .title {
+      margin-bottom: 10px;
+    }
+  }
+}
