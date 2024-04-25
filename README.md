@@ -1,5 +1,6 @@
 Shop api: https://fakeapi.platzi.com/en/about/introduction/
 Shop desing: https://react-shop-siza.vercel.app/productsecho 
+currency: https://open.er-api.com/v6/latest/USD
 
 
 
