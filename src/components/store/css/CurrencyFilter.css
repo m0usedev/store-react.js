@@ -1,0 +1,17 @@
+.CurrencyFilter {
+  .content {
+    .currencySelect{
+      width: 100%;
+      padding: 5px 10px;
+      border: 1px solid var(--container-border-color);
+      border-radius: var(--button-standar-border-radius);
+      background-color: var(--button-second-background-color);
+      color:var(--button-color);
+      font-size: var(--number-font-size);
+      
+      option {
+        white-space: pre-wrap;
+      }
+    }
+  }
+}

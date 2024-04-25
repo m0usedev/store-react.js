@@ -1,0 +1,28 @@
+.PriceSlider {
+  .title {
+    text-align: left;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column !important;
+    justify-content: space-around;
+    align-items: center;
+    .resume {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+
+      .content-num {
+        width: 40%;
+        text-align: center;
+      }
+    }
+    .content-slider {
+      width: 100%;
+      margin: 0 10px;
+    }
+  }
+}
