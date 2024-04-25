@@ -2,7 +2,7 @@
   {
     "currency": "Albania Lek",
     "abbreviation": "ALL",
-    "symbol": "&#76;&#101;&#107;"
+    "symbol": "&#76;"
   },
   {
     "currency": "Afghanistan Afghani",
@@ -27,7 +27,7 @@
   {
     "currency": "Azerbaijan New Manat",
     "abbreviation": "AZN",
-    "symbol": "&#1084;&#1072;&#1085;"
+    "symbol": "&#1084;"
   },
   {
     "currency": "Bahamas Dollar",
@@ -42,12 +42,12 @@
   {
     "currency": "Belarus Ruble",
     "abbreviation": "BYR",
-    "symbol": "&#112;&#46;"
+    "symbol": "&#112;"
   },
   {
     "currency": "Belize Dollar",
     "abbreviation": "BZD",
-    "symbol": "&#66;&#90;&#36;"
+    "symbol": "&#66;"
   },
   {
     "currency": "Bermuda Dollar",
@@ -57,12 +57,12 @@
   {
     "currency": "Bolivia Boliviano",
     "abbreviation": "BOB",
-    "symbol": "&#36;&#98;"
+    "symbol": "&#36;"
   },
   {
     "currency": "Bosnia and Herzegovina Convertible Marka",
     "abbreviation": "BAM",
-    "symbol": "&#75;&#77;"
+    "symbol": "&#75;"
   },
   {
     "currency": "Botswana Pula",
@@ -72,12 +72,12 @@
   {
     "currency": "Bulgaria Lev",
     "abbreviation": "BGN",
-    "symbol": "&#1083;&#1074;"
+    "symbol": "&#1083;"
   },
   {
     "currency": "Brazil Real",
     "abbreviation": "BRL",
-    "symbol": "&#82;&#36;"
+    "symbol": "&#82;"
   },
   {
     "currency": "Brunei Darussalam Dollar",
@@ -132,17 +132,17 @@
   {
     "currency": "Czech Republic Koruna",
     "abbreviation": "CZK",
-    "symbol": "&#75;&#269;"
+    "symbol": "&#75;"
   },
   {
     "currency": "Denmark Krone",
     "abbreviation": "DKK",
-    "symbol": "&#107;&#114;"
+    "symbol": "&#107;"
   },
   {
     "currency": "Dominican Republic Peso",
     "abbreviation": "DOP",
-    "symbol": "&#82;&#68;&#36;"
+    "symbol": "&#82;"
   },
   {
     "currency": "East Caribbean Dollar",
@@ -162,7 +162,7 @@
   {
     "currency": "Estonia Kroon",
     "abbreviation": "EEK",
-    "symbol": "&#107;&#114;"
+    "symbol": "&#107;"
   },
   {
     "currency": "Euro Member Countries",
@@ -217,12 +217,12 @@
   {
     "currency": "Hungary Forint",
     "abbreviation": "HUF",
-    "symbol": "&#70;&#116;"
+    "symbol": "&#70;"
   },
   {
     "currency": "Iceland Krona",
     "abbreviation": "ISK",
-    "symbol": "&#107;&#114;"
+    "symbol": "&#107;"
   },
   {
     "currency": "India Rupee",
@@ -232,7 +232,7 @@
   {
     "currency": "Indonesia Rupiah",
     "abbreviation": "IDR",
-    "symbol": "&#82;&#112;"
+    "symbol": "&#82;"
   },
   {
     "currency": "Iran Rial",
@@ -252,7 +252,7 @@
   {
     "currency": "Jamaica Dollar",
     "abbreviation": "JMD",
-    "symbol": "&#74;&#36;"
+    "symbol": "&#74;"
   },
   {
     "currency": "Japan Yen",
@@ -267,7 +267,7 @@
   {
     "currency": "Kazakhstan Tenge",
     "abbreviation": "KZT",
-    "symbol": "&#1083;&#1074;"
+    "symbol": "&#1083;"
   },
   {
     "currency": "Korea (North) Won",
@@ -282,7 +282,7 @@
   {
     "currency": "Kyrgyzstan Som",
     "abbreviation": "KGS",
-    "symbol": "&#1083;&#1074;"
+    "symbol": "&#1083;"
   },
   {
     "currency": "Laos Kip",
@@ -292,7 +292,7 @@
   {
     "currency": "Latvia Lat",
     "abbreviation": "LVL",
-    "symbol": "&#76;&#115;"
+    "symbol": "&#76;"
   },
   {
     "currency": "Lebanon Pound",
@@ -307,17 +307,17 @@
   {
     "currency": "Lithuania Litas",
     "abbreviation": "LTL",
-    "symbol": "&#76;&#116;"
+    "symbol": "&#76;"
   },
   {
     "currency": "Macedonia Denar",
     "abbreviation": "MKD",
-    "symbol": "&#1076;&#1077;&#1085;"
+    "symbol": "&#1076;"
   },
   {
     "currency": "Malaysia Ringgit",
     "abbreviation": "MYR",
-    "symbol": "&#82;&#77;"
+    "symbol": "&#82;"
   },
   {
     "currency": "Mauritius Rupee",
@@ -337,7 +337,7 @@
   {
     "currency": "Mozambique Metical",
     "abbreviation": "MZN",
-    "symbol": "&#77;&#84;"
+    "symbol": "&#77;"
   },
   {
     "currency": "Namibia Dollar",
@@ -362,7 +362,7 @@
   {
     "currency": "Nicaragua Cordoba",
     "abbreviation": "NIO",
-    "symbol": "&#67;&#36;"
+    "symbol": "&#67;"
   },
   {
     "currency": "Nigeria Naira",
@@ -392,17 +392,17 @@
   {
     "currency": "Panama Balboa",
     "abbreviation": "PAB",
-    "symbol": "&#66;&#47;&#46;"
+    "symbol": "&#66;"
   },
   {
     "currency": "Paraguay Guarani",
     "abbreviation": "PYG",
-    "symbol": "&#71;&#115;"
+    "symbol": "&#71;"
   },
   {
     "currency": "Peru Nuevo Sol",
     "abbreviation": "PEN",
-    "symbol": "&#83;&#47;&#46;"
+    "symbol": "&#83;"
   },
   {
     "currency": "Philippines Peso",
@@ -412,7 +412,7 @@
   {
     "currency": "Poland Zloty",
     "abbreviation": "PLN",
-    "symbol": "&#122;&#322;"
+    "symbol": "&#122;"
   },
   {
     "currency": "Qatar Riyal",
@@ -422,12 +422,12 @@
   {
     "currency": "Romania New Leu",
     "abbreviation": "RON",
-    "symbol": "&#108;&#101;&#105;"
+    "symbol": "&#108;"
   },
   {
     "currency": "Russia Ruble",
     "abbreviation": "RUB",
-    "symbol": "&#1088;&#1091;&#1073;"
+    "symbol": "&#1088;"
   },
   {
     "currency": "Saint Helena Pound",
@@ -442,7 +442,7 @@
   {
     "currency": "Serbia Dinar",
     "abbreviation": "RSD",
-    "symbol": "&#1044;&#1080;&#1085;&#46;"
+    "symbol": "&#1044;"
   },
   {
     "currency": "Seychelles Rupee",
@@ -482,12 +482,12 @@
   {
     "currency": "Sweden Krona",
     "abbreviation": "SEK",
-    "symbol": "&#107;&#114;"
+    "symbol": "&#107;"
   },
   {
     "currency": "Switzerland Franc",
     "abbreviation": "CHF",
-    "symbol": "&#67;&#72;&#70;"
+    "symbol": "&#67;"
   },
   {
     "currency": "Suriname Dollar",
@@ -502,7 +502,7 @@
   {
     "currency": "Taiwan New Dollar",
     "abbreviation": "TWD",
-    "symbol": "&#78;&#84;&#36;"
+    "symbol": "&#78;"
   },
   {
     "currency": "Thailand Baht",
@@ -512,7 +512,7 @@
   {
     "currency": "Trinidad and Tobago Dollar",
     "abbreviation": "TTD",
-    "symbol": "&#84;&#84;&#36;"
+    "symbol": "&#84;"
   },
   {
     "currency": "Turkey Lira",
@@ -547,17 +547,17 @@
   {
     "currency": "Uruguay Peso",
     "abbreviation": "UYU",
-    "symbol": "&#36;&#85;"
+    "symbol": "&#36;"
   },
   {
     "currency": "Uzbekistan Som",
     "abbreviation": "UZS",
-    "symbol": "&#1083;&#1074;"
+    "symbol": "&#1083;"
   },
   {
     "currency": "Venezuela Bolivar",
     "abbreviation": "VEF",
-    "symbol": "&#66;&#115;"
+    "symbol": "&#66;"
   },
   {
     "currency": "Viet Nam Dong",
@@ -572,6 +572,6 @@
   {
     "currency": "Zimbabwe Dollar",
     "abbreviation": "ZWD",
-    "symbol": "&#90;&#36;"
+    "symbol": "&#90;"
   }
 ]
