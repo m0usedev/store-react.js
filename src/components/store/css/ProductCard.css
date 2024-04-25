@@ -29,9 +29,21 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
 
     font-size: var(--p-font-size);
     line-height: var(--p-line-height);
+
+    .product-price {
+      max-width: 100px;
+
+      .Money {
+        display: flex;
+        align-items: flex-end;
+        .FormaterSimbol {
+          display: flex;
+        }
+      }
+    }
   }
 }
