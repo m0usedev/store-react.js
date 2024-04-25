@@ -2,7 +2,10 @@ import PropTypes from 'prop-types';
 
 import { useContext } from 'react';
 
+import { useCurrency } from './hooks/useCurrency';
+
 import BaseButton from '../button/BaseButton'
+import Money from '../utilities/Money';
 
 import { VisibilityContext } from "../../utilities/visibility/visibility"
 import { ProductsContext } from './hooks/useProducts';
@@ -13,6 +16,8 @@ import './css/ProductCard.css'
 export default function ProductCard ({ product }) {
   const { setVisibility }      = useContext(VisibilityContext)
   const { setSpecificProduct } = useContext(ProductsContext)
+  const { currencySimbol } = useCurrency()
+
 
   return (
     <div className='ProductCard'>
@@ -39,7 +44,12 @@ export default function ProductCard ({ product }) {
 
       <footer>
         <div className='product-price'>
-          Price <span>$ {product.price}</span>
+          Price
+          <Money
+            num={product.price}
+            simbol={currencySimbol}
+            positionSimbol="lefth"
+          />
         </div>
         <BaseButton text='Add to cart'/>
       </footer>
