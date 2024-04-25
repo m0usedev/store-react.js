@@ -1,16 +1,12 @@
 import PropTypes from 'prop-types';
 
-import { useState, createContext, useContext, useEffect } from "react";
+import { useState, createContext, useContext  } from "react";
 
-export function useFilter ( filtroObj = null ) {
+export function useFilter ( ) {
   /**
    * objeto : { rangoPrecio: {min:0,max:100}, categoria:['coche','tecnologia]}
    */
   const {filtro, setFiltro} = useContext(FilterContext)
-
-  useEffect( () => {
-    if(filtroObj) setFiltro(filtroObj)
-  },[filtroObj])
 
   const modifyFilter = ( propiedad ) => {
     /**
@@ -19,40 +15,40 @@ export function useFilter ( filtroObj = null ) {
     if (Array.isArray(propiedad)) {
       if (propiedad.length == 2) {
         let newFiltro = { ...filtro }
-        if(newFiltro[propiedad[0]]) {
+        if(newFiltro[propiedad[0]] != undefined) {
           if( typeof newFiltro[propiedad[0]] == typeof propiedad[1])  {
             newFiltro[propiedad[0]] = propiedad[1]
             setFiltro(newFiltro)
           } else {
             return {
-              response : false,
+              type : false,
               mesaje   : 'El tipo de valor nuevo no coincide con el antiguio. Antiguo: '+typeof newFiltro[propiedad[0]]+' Nuevo: '+typeof propiedad[1]
             }
           }
         } else {
           return {
-            response : false,
+            type : false,
             mesaje   : 'La propiedad no existe'
           }
         }
         return {
-          response : true,
+          type : true,
           mesaje   : 'Actualizacion correcta'
         }
       }
       return {
-        response : false,
+        type : false,
         mesaje   : 'El array no tiene dos elementos, tiene '+propiedad.length
       }
     }
     return {
-      response : false,
+      type : false,
       mesaje   : 'No has pasado un array por los parametros de la funcion'
     }
 
   }
 
-  return { filtro, modifyFilter }
+  return { filtro, setFiltro, modifyFilter }
 }
 
 export const FilterContext = createContext()
