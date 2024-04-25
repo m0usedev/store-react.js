@@ -1,26 +1,39 @@
 import { VisibilityProvider } from "../../utilities/visibility/visibility"
 import { ProductsProvider } from "./hooks/useProducts"
 import { PaginationProvider } from "./utilities/usePagination"
+import { FilterProvider } from "./hooks/useFilter"
+import { CurrencyProvider } from "./hooks/useCurrency"
 
-import StoreHeader from "./StoreHeader"
 import ProductList from "./ProductList"
 import StorePagination from "./StorePagination"
+import StoreFilter from "./StoreFilter"
+
+import './css/Store.css'
 
 export default function Store () {
   return (
     <div className="Store">
-
       <ProductsProvider>
         <PaginationProvider>
+          <CurrencyProvider>
 
-          <StoreHeader />
+            <div className="content">
+              <div className="content-1">
+                <FilterProvider>
+                  <StoreFilter />
+                </FilterProvider>
+              </div>
+              <div className="content-2">
+                <VisibilityProvider>
+                  <ProductList />
+                </VisibilityProvider>
 
-          <VisibilityProvider>
-            <ProductList />
-          </VisibilityProvider>
+                <StorePagination />
+              </div>
+              <div className="content-3"></div>
+            </div>
 
-          <StorePagination />
-          
+          </CurrencyProvider>
         </PaginationProvider>
       </ProductsProvider>
     </div>

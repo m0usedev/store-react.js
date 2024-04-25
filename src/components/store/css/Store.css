@@ -1,0 +1,35 @@
+.Store {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    .content-1,
+    .content-2,
+    .content-3 {
+      width: 100%;
+    }
+
+    .content-1 {
+      position: relative;
+      height: 100vh;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .StoreFilter {
+        position: fixed;
+        width: 300px;
+        z-index: 0;
+      }
+    }
+
+  }
+
+}
